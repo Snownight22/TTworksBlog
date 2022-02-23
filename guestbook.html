@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: 留言
 comments: true
 permalink: /guestbook/
 ---
@@ -41,7 +41,10 @@ permalink: /guestbook/
 <h3>2. 你也可以通过下面的方式找到我：</h3>
 <pre>
     <div class="content">
-        python -c "import base64;print((base64.b64decode('CiAgICBFbWFpbCAgICAgICAgICAgICAgICAgICA6ICAgb3Vrb2hvdUBvdXRsb29rLmNvbQogICAgQmxvZyBzaXRlICAgICAgICAgICAgICAgOiAgIGh0dHBzOi8vd3d3Lm91a29ob3Uud2FuZy8KICAgIFdlY2hhdCBvZmZpY2lhbCBhY2NvdW50IDogICBvdWtvaG91CiAgICBTbG9nYW4gICAgICAgICAgICAgICAgICA6ICAg5oiR5qKm5oms5bee77yM5L6/5oOz5Yiw5oms5bee5qKm5oiR44CCCiAgICA=').decode(encoding='utf-8')))"
+    Email                   :   s_peach@163.com<br/>
+    Blog site               :   https://snownight22.github.io/TTworksBlog/<br/>
+    Wechat official account :   SnowNight22<br/>
+    Slogan                  :   博望而约取;厚积而薄发。<br/>
     </div>
 </pre>
 
@@ -50,9 +53,9 @@ permalink: /guestbook/
 <img src="{{ '/assets/imgs/yarerusa.jpg' | prepend: site.baseurl }}" alt="yarerusa"/>
 
 <p>regards.</p>
-<h4 align="right" href="https:www.oukohou.wang">
-    <a href="https:www.oukohou.wang">
-        oukohou.
+<h4 align="right" href="https://snownight22.github.io/TTworksBlog/">
+    <a href="https://snownight22.github.io/TTworksBlog/">
+        二十二夜的雪.
     </a>
 </h4>
 
@@ -61,7 +64,8 @@ permalink: /guestbook/
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
 <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
 
-<p><br/><br/><br/><br/><br/><br/><br/><br/><hr /><br/>或者你也可以直接在这里留言哈哈：</p>
+<p><br/><br/><br/><br/><hr /><br/>或者你也可以直接在这里留言哈哈：</p>
+{% if site.valine.enable %}
 <div id="valine_comment" class="fb_comments_container"></div>
 <script>
     var notify = '{{site.valine.notify}}' === true;
@@ -81,3 +85,5 @@ permalink: /guestbook/
         avatar: '{{site.valine.avatar}}'
     });
 </script>
+{% endif %}
+{% include comment.html %}
