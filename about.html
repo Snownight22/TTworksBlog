@@ -72,7 +72,7 @@ permalink: /about/
     <p>重要的事情再说一遍：</p>
     <!--</pre>-->
     <p style="text-indent:2em">
-    <div style="color:blue; text-indent:2em">微信公众号：
+    <div style="color:blue; text-indent:2em" align="center">微信公众号：
         <a href=""
            target="_blank">
             <u><b>二十二夜的雪</b></u><a style="color:cadetblue"></a></a>
@@ -80,14 +80,15 @@ permalink: /about/
 
     </div>
     </p>
-    <!--
-    <img src="../assets/imgs/wechat_official_account.png"
-         width="80%"
-         alt="oukohou"/>
+
+    <div align="center">
+    <img src="{{ '/assets/imgs/wechat_official_account.png' | prepend:site.baseurl }}"
+         width="30%"
+         alt="Snownight22" align="center"/>
 
     <p>Scan and we'll see.
     </p>
-    -->
+    </div>
 
 </div>
 
@@ -96,7 +97,7 @@ permalink: /about/
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
 <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
 
-<p><br/><br/><br/><br/><br/><br>
+<p><br/><br/><br/><br/>
 <hr/><br/>不写个评论嘛：</p>
 <div id="valine_comment" class="fb_comments_container"></div>
 {% if site.valine.enable %}
