@@ -4,6 +4,7 @@ title:  "各个搜索引擎的提交个人网站地址的入口"
 date:   2018-11-01 20:57:09 +0800--
 categories: [部署]
 tags:   [search engine, baidu, google, 360, sougou]
+topping: true
 ---
 有了自己的域名，搭建好了自己的个人博客站点，就万事俱备了么？  
 剩下的只是勤恳更新自己的内容，就自然会有人看到并来给你32个赞了么？  
