@@ -367,3 +367,6 @@ Markdown可以实现表格，可以使用三个或多个连字符`---`创建每�
 
 Markdown语法兼容HTML，可以将HTML标签嵌套在Markdown文件中，以实现Markdown不能处理的格式信息。
 
+---
+参考：  
+[Markdown中文网](http://markdown.p2hp.com/ "https://github.github.com/gfm/")  
