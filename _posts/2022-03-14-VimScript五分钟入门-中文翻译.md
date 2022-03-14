@@ -239,6 +239,11 @@ Vim并没有内置类类型, 但你可以利用`Dictionary`对象来获得基本
 
 希望本文对你有用, 感谢阅读.  
 
+### 译注-vim资源
+
+[vim中文速查手册](https://github.com/skywind3000/awesome-cheatsheets/blob/master/editors/vim.txt)  
+
+[learn vimscript the hard way](https://learnvimscriptthehardway.stevelosh.com/) -- (中文版 [笨方法学习vimscript](https://www.kancloud.cn/kancloud/learn-vimscript-the-hard-way/49321))
 
 ---
 **参考**：   
