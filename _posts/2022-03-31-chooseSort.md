@@ -21,6 +21,16 @@ tags: C
 ### 代码示例
 
 ```
+#define SORT_OK    (0)
+#define SORT_ERR    (-1)
+
+static void swap(int* a, int* b)
+{
+    int tmp = *a;
+    *a = *b;
+    *b = tmp;
+}
+
 int chooseSort(int* array, int arrLen)
 {
     if (array == NULL || arrLen < 0)
