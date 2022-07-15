@@ -1,11 +1,20 @@
 ﻿---
 layout: post
 title: 散列表（一）-散列表及常用字符串哈希函数
-date:   2022-07-15 16:13:00 +0800
+date:   2022-07-15 21:19:00 +0800
 categories: Algorithm
 tags: C
 topping: true
 ---
+<!--
+本文档表格居中显示
+-->
+<style>
+table {
+width: 80%;
+margin: auto;
+}
+</style>
 
 ### 散列表  {#hashTable}
 
@@ -252,7 +261,7 @@ unsigned int FNVHash(char *str)
 
 把哈希表大小分别设为100, 1000, 10000，对两个样本进行哈希后取其最大冲突数。    
 
-样本1 （45403 个单词）：
+样本1 （45403 个单词）：  
 
 |哈希表大小 |100 |1000 |10000 |
 |:---------:|:---:|:---:|:---:|
@@ -268,7 +277,7 @@ unsigned int FNVHash(char *str)
 |BPHash   |3079 |1621 |1505 |
 |FNVHash  |490  |69   |15   |
 
-样本2 （99171 个单词）：
+样本2 （99171 个单词）：  
 
 |哈希表大小 |100 |1000 |10000 |
 |:---------:|:---:|:---:|:---:|
@@ -283,6 +292,8 @@ unsigned int FNVHash(char *str)
 |DEKHash  |1401 |204  |37   |
 |BPHash   |7417 |3233 |2668 |
 |FNVHash  |1068 |131  |24   |
+
+从表一可以看到哈希效率最快的有 DJBHash, BKDRHash, SDBMHash，最慢的有 PJWHash 和 ELFHash，从表二和表三可以看到，哈希效果最差的是 BPHash，其次是 PJWHash 和 ELFHash，其它效果差别不大。  
 
 --- 
 **参考**：  
