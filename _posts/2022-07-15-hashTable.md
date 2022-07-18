@@ -299,6 +299,6 @@ unsigned int FNVHash(char *str)
 **参考**：  
 [字符串哈希函数](https://zhuanlan.zhihu.com/p/507990991)  
 [FNV哈希算法](https://www.cnblogs.com/zrx1/p/16452263.html)  
-<算法导论> 第三版中文版  P11   
-<C程序设计语言> 第二版 P6.6  
+《算法导论》 第三版中文版  P11   
+《C程序设计语言》 第二版 P6.6  
  
