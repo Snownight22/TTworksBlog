@@ -289,6 +289,5 @@ main(int argc, char *const *argv)
 ---
 nginx源码基于nginx-1.22.0版本  
 **参考**：  
-[nginx源码分析—模块及其初始化](https://blog.csdn.net/livelylittlefish/article/details/6571497)   
-[Nginx源码分析 - 主流程篇 - 模块的初始化（12）](https://blog.csdn.net/initphp/article/details/51898955)  
+[Nginx 启动初始化过程](https://www.kancloud.cn/digest/understandingnginx/202596)   
 [菜鸟nginx源码剖析 框架篇（一） 从main函数看nginx启动流程](https://blog.csdn.net/chen19870707/article/details/41050379)  

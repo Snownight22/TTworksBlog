@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nginx源码分析-数据结构之模块及其初始化 
+title: Nginx源码分析-模块及其初始化 
 date:   2022-09-01 10:14:00 +0800
 categories: Nginx源码分析
 tags: C nginx
