@@ -1080,4 +1080,4 @@ ESC[>2g   直接将图像显示到连接的图形打印机。图像也可以选�
  - [有道翻译](https://fanyi.youdao.com)  
  - [Goldendict](http://goldendict.org)  
 
-原文链接：<http://andrewscala.com/vimscript/>  
+
