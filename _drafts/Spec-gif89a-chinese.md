@@ -8,40 +8,40 @@ tag: 翻译
 
 目录
 
-免责声明   ---------------------------------1  
-序   -----------------------------------------1  
-许可  ---------------------------------------1  
-关于本文档  ------------------------------2  
-总则   --------------------------------------2  
-版本号   -----------------------------------2  
-编码器   -----------------------------------3  
-解码器   -----------------------------------3  
-守则   --------------------------------------3  
-关于建议   --------------------------------4  
-关于颜色表   -----------------------------4  
-块，扩展和作用域   --------------------4  
-块大小   -----------------------------------5  
-使用GIF作为嵌入式协议   -------------5  
-数据子块   --------------------------------5  
-块结束符   --------------------------------6  
-头   -----------------------------------------7  
-逻辑屏幕标识符   ------------------------8  
-全局颜色表   ------------------------------10  
-图像标识符   ------------------------------11  
-局部颜色表   ------------------------------13  
-基于表格的图像数据   -------------------14  
-图像控制扩展   ----------------------------15  
-注释扩展   ----------------------------------17  
-纯文本扩展   -------------------------------18  
-应用程序扩展   ----------------------------21  
-Trailer   ------------------------------------23  
-快速参考表   ------------------------------24  
-GIF语法   ----------------------------------25  
-术语表   ------------------------------------27  
-约定   ---------------------------------------28  
-交错图像   ---------------------------------29  
-变长编码LZW压缩   ---------------------30  
-在线功能对话   ---------------------------33  
+[免责声明   ---------------------------------1](#Disclaimer)  
+[序   -----------------------------------------1](#Foreword)  
+[许可  ---------------------------------------1](#Licensing)  
+[关于本文档  ------------------------------2](#AboutDoc)  
+[总则   --------------------------------------2](#General)  
+[版本号   -----------------------------------2](#VerNum)  
+[编码器   -----------------------------------3](#Encoder)  
+[解码器   -----------------------------------3](#Decoder)  
+[守则   --------------------------------------3](#Compliance)  
+[关于建议   --------------------------------4](#AboutRecom)  
+[关于颜色表   -----------------------------4](#AboutColorTable)  
+[块，扩展和作用域   --------------------4](#BlockExtensionsScope)  
+[块大小   -----------------------------------5](#BlockSize)  
+[使用GIF作为嵌入式协议   -------------5](#AssembeddedProtocol)  
+[数据子块   --------------------------------5](#DataSubBlock)  
+[块结束符   --------------------------------6](#BlockTerminator)  
+[头   -----------------------------------------7](#Header)  
+[逻辑屏幕标识符   ------------------------8](#LogicalScreenDes)  
+[全局颜色表   ------------------------------10](#GlobalColorTable)  
+[图像标识符   ------------------------------11](#ImageDes)  
+[局部颜色表   ------------------------------13](#LocalColorTable)  
+[基于表格的图像数据   -------------------14](#TbImageData)  
+[图像控制扩展   ----------------------------15](#GraphicControlExt)  
+[注释扩展   ----------------------------------17](#CommentExt)  
+[纯文本扩展   -------------------------------18](#PlainTextExt)  
+[应用程序扩展   ----------------------------21](#AppExt)  
+[Trailer   ------------------------------------23](#Trailer)  
+[快速参考表   ------------------------------24](#AppendixA)  
+[GIF语法   ----------------------------------25](#AppendixB)  
+[术语表   ------------------------------------27](#AppendixC)  
+[约定   ---------------------------------------28](#AppendixD)  
+[交错图像   ---------------------------------29](#AppendixE)  
+[变长编码LZW压缩   ---------------------30](#AppendixF)  
+[在线功能对话   ---------------------------33](#AppendixG)  
 
 
 #### 1. 免责声明    {#Disclaimer}
@@ -141,7 +141,7 @@ GIF格式的定义允许数据流只包含标题、逻辑屏幕描述符、全�
 
 块中的块大小字段用于计算块中剩余的字节数，不包括块大小字段本身，也不包括块终止符(如果有的话)。数据块以外的块的长度是固定的;提供块大小字段是为了方便跳过它们，而不是允许它们的大小在未来更改。数据块和子块的长度是可变的，以适应数据量。  
 
-#### 14. 使用GIF作为嵌入式协议    {#AsEmbeddedProtocol}
+#### 14. 使用GIF作为嵌入式协议    {#AssembeddedProtocol}
 
 作为一种嵌入式协议，GIF 可能是更大的应用程序协议的一部分，在这些协议中，GIF 被用来渲染图形。在这种情况下，应用程序协议可以定义一个包含GIF数据流的块。然后，应用程序将在遇到 GIF 类型的块时调用 GIF 解码器。推荐使用这种方法来支持使用应用程序扩展 (Application Extensions)，这会成为所有其他不处理它们的应用程序的开销。因为 GIF 数据流必须在上下文中处理，所以应用程序必须依赖于在流本身之外识别 GIF 数据流的一些方法。  
 
@@ -454,7 +454,7 @@ GIF格式的定义允许数据流只包含标题、逻辑屏幕描述符、全�
 
     e. 建议。无。
 
-#### 22. 基于表的图像数据    {#TbImageData}
+#### 22. 基于表格的图像数据    {#TbImageData}
 
     a. 描述。基于表的图像的图像数据由一系列子块组成，每个子块的大小最多为 255 个字节，包含了活动颜色表的索引，表示图像中的每个像素。像素索引按从左到右和从上到下的顺序排列。每个索引必须在活动颜色表的大小范围内，从0开始。索引序列是使用可变长代码的LZW算法编码的，如附录F所述。  
 
@@ -556,7 +556,7 @@ GIF格式的定义允许数据流只包含标题、逻辑屏幕描述符、全�
 
         ii) 用户输入标志位 - 当设置了标志位，表示期望用户输入时，解码器可以发出铃声(0x07)来提醒用户期望输入。在没有指定延迟时间的情况下，解码器应该无限期地等待用户输入。建议编码器不要在没有指定延迟时间的情况下设置用户输入标志位。  
 
-#### 24. 注释扩展    {#commentExt}
+#### 24. 注释扩展    {#CommentExt}
 
     a. 描述。注释扩展包含文本信息，这不是GIF数据流中实际图形的一部分。它适用于包含关于图形、字幕、描述或任何其他类型的非控制和非图形数据的注释。注释扩展可能被解码器忽略，也可能被保存以供以后处理;在任何情况下，注释扩展都不应中断或干扰数据流的处理。  
 
@@ -826,28 +826,25 @@ GIF格式的定义允许数据流只包含标题、逻辑屏幕描述符、全�
 
 示例：
 
-<GIF  Data Stream> ::= Header <Logical Screen> <Data>* Trailer
+    <GIF  Data Stream> ::= Header <Logical Screen> <Data>* Trailer  
 
 该规则定义了实体<GIF Data Stream>如下所示。它必须以 Header 开头。Header 后面是一个名为 Logical Screen 的实体，它由下面的另一个规则定义。逻辑屏幕后面是实体 Data，它也在下面由另一个规则定义。最后，实体数据后面是 Trailer。因为没有定义 Header 或 Trailer 的规则，这意味着这些块在文档中定义。实体 Data 后面有一个特殊的符号 (*)，这意味着在这个位置，实体 Data 可以重复任何次数，包括 0 次。关于这个主题的进一步阅读，请参考编程语言的标准文本。
 
-语法
+语法  
 
-<GIF Data Stream> ::=     Header <Logical Screen> <Data>* Trailer
+    <GIF Data Stream> ::= Header <Logical Screen> <Data>* Trailer  
 
-<Logical Screen> ::=      Logical Screen Descriptor [Global Color Table]
+    <Logical Screen> ::= Logical Screen Descriptor [Global Color Table]  
 
-<Data> ::=                <Graphic Block>  |
-                          <Special-Purpose Block>
+    <Data> ::= <Graphic Block> | <Special-Purpose Block>  
 
-<Graphic Block> ::=       [Graphic Control Extension] <Graphic-Rendering Block>
+    <Graphic Block> ::= [Graphic Control Extension] <Graphic-Rendering Block>  
 
-<Graphic-Rendering Block> ::=  <Table-Based Image>  |
-                               Plain Text Extension
+    <Graphic-Rendering Block> ::=  <Table-Based Image> | Plain Text Extension  
 
-<Table-Based Image> ::=   Image Descriptor [Local Color Table] Image Data
+    <Table-Based Image> ::= Image Descriptor [Local Color Table] Image Data  
 
-<Special-Purpose Block> ::=    Application Extension  |
-                               Comment Extension
+    <Special-Purpose Block> ::= Application Extension  |  Comment Extension  
 
 注意：语法表明，GIF数据流可以只包含头部、逻辑屏幕描述符、全局颜色表和GIF Trailer。此特殊情况用于加载带有全局颜色表的GIF解码器，为后续不使用任何颜色表的数据流做准备。
 
@@ -1026,45 +1023,40 @@ June 1984.
 
 GIF 功能查询序列由主机发出，并请求交互式GIF解码器返回一个响应消息，该响应消息定义了解码器的图形参数。这包括返回有关可用屏幕尺寸、支持的位/颜色数量和支持的颜色细节数量的信息。GIF功能查询的转义序列定义为：  
 
-ESC[>0g           0x1B 0x5B 0x3E 0x30 0x67  
+    ESC[>0g           0x1B 0x5B 0x3E 0x30 0x67  
 
 ##### GIF功能响应
 
 GIF 功能响应消息由交互式GIF解码器返回，并为软件支持的所有图形模式定义解码器的显示能力。注意，这也可以包括图形打印机和显示器屏幕。此消息的一般格式为：  
 
-#version;protocol{;dev, width, height, color-bits, color-res}...<CR>   
+    #version;protocol{;dev, width, height, color-bits, color-res}...<CR>   
 
-'#'            GIF Capabilities Response identifier character.  
-version        GIF format version number;  initially '87a'.  
-protocol='0'   No end-to-end protocol supported by decoder Transfer as direct
-               8-bit data stream.  
-protocol='1'   Can use CIS B+ error correction protocol to transfer GIF data
-               interactively from the host directly to the display.  
-dev = '0'      Screen parameter set follows.  
-dev = '1'      Printer parameter set follows.  
-width          Maximum supported display width in pixels.  
-height         Maximum supported display height in pixels.  
-color-bits     Number of bits per pixel supported. The number of supported
-               colors is therefore 2**color-bits.  
-color-res      Number of bits per color component supported in the hardware
-               color palette. If color-res is '0' then no hardware palette
-               table is available.  
+    '#'            GIF 能力响应标识符字符.  
+    version        GIF 格式版本号;  初始值 '87a'.   
+    protocol='0'   解码器传输不支持端到端协议作为直接的8位数据流.    
+    protocol='1'   是否可以使用CIS B+纠错协议将GIF数据从主机直接交互传输到显示器.  
+    dev = '0'      屏幕参数设置如下.   
+    dev = '1'      打印机参数设置如下.   
+    width          支持的最大显示宽度(像素).   
+    height         支持的最大显示高度(像素).   
+    color-bits     每像素支持的比特数。因此，支持的颜色的数量是2**颜色位.   
+    color-res      硬件调色板中支持的每个颜色组件的位数。如果color-res为'0'，则没有可用的硬件调色板表.   
 
 注意，GIF 功能响应中的所有值都以ASCII十进制数字的形式返回，并且消息以回车字符结束。  
 
 下面的GIF功能响应消息描述了三种标准的IBM PC增强图形适配器配置，没有打印机;GIF数据流可在纠错协议内处理：  
 
-#87a;1;0,320,200,4,0;0,640,200,2,2;0,640,350,4,2<CR>  
+    #87a;1;0,320,200,4,0;0,640,200,2,2;0,640,350,4,2<CR>  
 
 ##### 进入GIF图形模式
 
 目前定义了两个序列来调用交互式GIF解码器。它们之间唯一的区别是选择了不同的输出媒体。这些序列是：  
 
-ESC[>1g     在屏幕上显示 GIF 图像  
+    ESC[>1g     在屏幕上显示 GIF 图像  
 
                   0x1B 0x5B 0x3E 0x31 0x67  
 
-ESC[>2g   直接将图像显示到连接的图形打印机。图像也可以选择性地显示在屏幕上。  
+    ESC[>2g   直接将图像显示到连接的图形打印机。图像也可以选择性地显示在屏幕上。  
 
                   0x1B 0x5B 0x3E 0x32 0x67
 
