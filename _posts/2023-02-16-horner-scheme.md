@@ -4,7 +4,6 @@ title: 秦九韶算法(霍纳法则)
 date:   2023-02-16 10:30:00 +0800　
 categories: Algorithm
 tags: C
-topping: true
 ---
 
 ### 介绍
