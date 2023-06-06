@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 用栈实现平衡符号的检查
-date:   2023-06-05 22:30:00 +0800　
+date:   2023-06-10 22:30:00 +0800　
 categories: Algorithm
 tags: C
 topping: true
