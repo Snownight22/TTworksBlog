@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 中缀表达式，波兰式与逆波兰式
-date:   2023-06-11 22:30:00 +0800　
+date:   2023-06-11 23:10:00 +0800　
 categories: Algorithm
 tags: C
 topping: true
@@ -34,7 +34,13 @@ topping: true
 
 #### 逆波兰式计算图示
 
-![RPN.png]({{site.baseurl}}/styles/images/algorithm/stack/infixNotation.png)
+![RPNCalc1.png]({{site.baseurl}}/styles/images/algorithm/stack/RPNCalc1.png)  
+
+![RPNCalc2.png]({{site.baseurl}}/styles/images/algorithm/stack/RPNCalc2.png)  
+
+![RPNCalc3.png]({{site.baseurl}}/styles/images/algorithm/stack/RPNCalc3.png)  
+
+![RPNCalc4.png]({{site.baseurl}}/styles/images/algorithm/stack/RPNCalc4.png)  
 
 #### 逆波兰式求值代码实现
 
@@ -76,7 +82,23 @@ int calcNotationValue(const char* RPNotation)
 
 #### 图示
 
+![infixToRPN1.png]({{site.baseurl}}/styles/images/algorithm/stack/infixToRPN1.png)  
+
+![infixToRPN2.png]({{site.baseurl}}/styles/images/algorithm/stack/infixToRPN2.png)  
+
+![infixToRPN3.png]({{site.baseurl}}/styles/images/algorithm/stack/infixToRPN3.png)  
+
+![infixToRPN4.png]({{site.baseurl}}/styles/images/algorithm/stack/infixToRPN4.png)  
+
+![infixToRPN5.png]({{site.baseurl}}/styles/images/algorithm/stack/infixToRPN5.png)  
+
+![infixToRPN6.png]({{site.baseurl}}/styles/images/algorithm/stack/infixToRPN6.png)  
+
+![infixToRPN7.png]({{site.baseurl}}/styles/images/algorithm/stack/infixToRPN7.png)  
+
 #### 中缀表达式转逆波兰式代码实现
+
+我们同样使用前面讲到的栈来实现此功能。  
 
 ```
 //infix expression to reverse polish notation
