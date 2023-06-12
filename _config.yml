@@ -82,8 +82,8 @@ codehub: # 代码仓库
 
 valine:
   enable: false
-  app_id:
-  app_key:
+  app_id: vtrlGWXgg2lOLvgkgiLacWTE-gzGzoHsz
+  app_key: QXTrNSAjMzhhYlGW1i1I3qWe
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   visitor: true
@@ -105,3 +105,8 @@ live2D:
   enable: false
   rocket: false
 
+leanCloud:
+  enable: false
+  appId: vtrlGWXgg2lOLvgkgiLacWTE-gzGzoHsz
+  appKey: QXTrNSAjMzhhYlGW1i1I3qWe
+  counter: counter
