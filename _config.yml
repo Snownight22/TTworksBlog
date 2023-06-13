@@ -106,7 +106,7 @@ live2D:
   rocket: false
 
 leanCloud:
-  enable: false
+  enable: true
   appId: vtrlGWXgg2lOLvgkgiLacWTE-gzGzoHsz
   appKey: QXTrNSAjMzhhYlGW1i1I3qWe
   counter: counter

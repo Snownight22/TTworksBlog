@@ -37,7 +37,7 @@ layout: base
             <span id={{page.url}} class="leancloud-visitors" data-flag-title={{page.title}}>
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-text">阅读量 </span>
-                <span class="leancloud-visitors-count"></span>
+                <span class="leancloud-visitors-count">-</span>
             </span>
         </p>
 
@@ -97,5 +97,15 @@ layout: base
     {% include comment.html %}
     {% endif %}
 
+    {% if site.leanCloud.enable %}
+    {% include readerStatistics %}
+    <script>
+        $(function() {
+          var Counter = AV.Object.extend(name);
+          addCount(Counter);
+          showCount(Counter);
+        });
+    </script>
+    {% endif %}
 
 </article>
