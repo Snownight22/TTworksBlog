@@ -75,11 +75,11 @@ leanCloud:
 <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
 
 <script>
-    AV.initialize('{{site.leanCloud.appId}}', '{{site.leanCloud.appKey}}');
+    AV.initialize('{ {site.leanCloud.appId}}', '{ {site.leanCloud.appKey}}');
 </script>
 <script>
     // 自己创建的Class的名字
-    var name='{{site.leanCloud.counter}}';
+    var name='{ {site.leanCloud.counter}}';
     // 创建新记录
     function createRecord(Counter, url){
         // 设置 ACL
