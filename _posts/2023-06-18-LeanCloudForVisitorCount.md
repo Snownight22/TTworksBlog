@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  使用 LeanCloud 为 Github Pages 添加阅读量统计
-date:   2023-06-17 22:30:00 +0800
+date:   2023-06-18 22:30:00 +0800
 categories: 杂项
 tag: 教程
 ---
@@ -220,9 +220,3 @@ leanCloud:
 [使用LeanCloud为Github Pages添加阅读量统计功能](https://zhuanlan.zhihu.com/p/353378112)  
 [jekyll使用LeanCloud记录文章的访问次数](https://priesttomb.github.io/%E6%97%A5%E5%B8%B8/2017/11/06/jekyll%E4%BD%BF%E7%94%A8LeanCloud%E8%AE%B0%E5%BD%95%E6%96%87%E7%AB%A0%E7%9A%84%E8%AE%BF%E9%97%AE%E6%AC%A1%E6%95%B0/)  
 [hexo史上最全搭建教程](http://www.5ityx.com/cate117/85430.html)  
-
-
-
-
-
-
