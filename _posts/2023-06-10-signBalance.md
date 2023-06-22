@@ -15,7 +15,7 @@ topping: true
 
 ### 代码实现
 
-我们使用之前讲到的[抽象数据类型(ADT)-栈]({{site.baseurl}}/2023/06/04/Stack/)代码来实现此功能。  
+我们使用之前讲到的[抽象数据类型(ADT)-栈]({{site.baseurl}}/2023/06/04/Stack)代码来实现此功能。  
 
 ```
 bool signBalance(const char* string)

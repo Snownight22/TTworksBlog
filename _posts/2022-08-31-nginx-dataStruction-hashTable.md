@@ -7,7 +7,7 @@ tags: C nginx
 topping: true
 ---
 
-Nginx 中定义了自己的哈希表 ngx_hash_t，定义在 ngx_hash.c/h 中，有关哈希表可参考[散列表（一）- 散列表及常用字符串哈希函数](https://snownight22.github.io/TTworksBlog/2022/07/15/hashTable/) 及 [散列表（二）- 散列表解决冲突的方式](https://snownight22.github.io/TTworksBlog/2022/07/18/hashTable-collisionResolution/)。  
+Nginx 中定义了自己的哈希表 ngx_hash_t，定义在 ngx_hash.c/h 中，有关哈希表可参考[散列表（一）- 散列表及常用字符串哈希函数]({{site.baseurl}}/2022/07/15/hashTable) 及 [散列表（二）- 散列表解决冲突的方式]({{site.baseurl}}/2022/07/18/hashTable-collisionResolution)。  
 
 ### 数据结构定义
 

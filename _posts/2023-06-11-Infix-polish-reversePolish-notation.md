@@ -44,7 +44,7 @@ topping: true
 
 #### 逆波兰式求值代码实现
 
-我们使用之前讲到的[抽象数据类型(ADT)-栈]({{site.baseurl}}/2023/06/04/Stack/)栈代码来实现此功能。  
+我们使用之前讲到的[抽象数据类型(ADT)-栈]({{site.baseurl}}/2023/06/04/Stack)栈代码来实现此功能。  
 
 ```
 #define NOTATION_MAX    (256)

@@ -7,7 +7,7 @@ tags: C nginx
 topping: false
 ---
 
-Nginx 中的红黑树结构 ngx_rbtree_t，定义在 ngx_rbtree.c/h 中，红黑树的详细情况可参见[红黑树及其C语言实现](https://snownight22.github.io/TTworksBlog/2022/06/28/redBlackTree/)。  
+Nginx 中的红黑树结构 ngx_rbtree_t，定义在 ngx_rbtree.c/h 中，红黑树的详细情况可参见[红黑树及其C语言实现]({{site.baseurl}}/2022/06/28/redBlackTree)。  
 
 ### 数据结构定义
 

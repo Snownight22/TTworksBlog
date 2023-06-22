@@ -760,7 +760,7 @@ ngx_atoi(u_char *line, size_t n)
 
 ### 字符串编解码
 
-Base64 编解码相关，URL 的base64与普通base64算法基本类似，只是URL里有三个字符 '+', '/', '='有特殊含义，因此在 URL 的 base64 算法中这三个字符会被替换掉，'+' 替换为 '-'，'/' 替换为 '_'，'=' 省略，详见[RFC4684-Base16, Base32, 和 Base64 数据编码-中文翻译](https://snownight22.github.io/TTworksBlog/2022/07/04/rfc4684-baseEncode-cn/)  
+Base64 编解码相关，URL 的base64与普通base64算法基本类似，只是URL里有三个字符 '+', '/', '='有特殊含义，因此在 URL 的 base64 算法中这三个字符会被替换掉，'+' 替换为 '-'，'/' 替换为 '_'，'=' 省略，详见[RFC4684-Base16, Base32, 和 Base64 数据编码-中文翻译]({{site.baseurl}}/2022/07/04/rfc4684-baseEncode-cn)  
 
 ```
 //计算base64编解码后的长度
@@ -808,7 +808,7 @@ void ngx_sort(void *base, size_t n, size_t size,
 #define ngx_qsort             qsort
 ```
 
-ngx_sort 使用插入排序，详见[排序算法之-插入排序](https://snownight22.github.io/TTworksBlog/2022/04/01/insertSort/)，下面是其实现代码：  
+ngx_sort 使用插入排序，详见[排序算法之-插入排序]({{site.baseurl}}/2022/04/01/insertSort)，下面是其实现代码：  
 
 ```
 void
