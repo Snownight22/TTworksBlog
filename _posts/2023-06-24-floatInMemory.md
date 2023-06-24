@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 浮点数在内存中的存储 
-date:   2023-06-24 22:30:00 +0800
+date:   2023-06-24 22:00:00 +0800
 categories: [计算机原理]
 tags: [计算机原理]
 topping: false
