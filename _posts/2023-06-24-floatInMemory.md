@@ -89,5 +89,5 @@ int main(int argc, char* argv[])
 
 ---
 **参考**：  
-[IEEE754详解（最详细简单有趣味的介绍](https://blog.csdn.net/gao_zhennan/article/details/120717424)  
+[IEEE754详解（最详细简单有趣味的介绍）](https://blog.csdn.net/gao_zhennan/article/details/120717424)  
 [百度百科－IEEE 754](https://baike.baidu.com/item/IEEE%20754/3869922?fr=aladdin)  
