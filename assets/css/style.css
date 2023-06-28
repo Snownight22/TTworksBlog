@@ -1266,8 +1266,9 @@ ul {
 }
 
 .div-copyright {
-    margin: 0em 8em 0em;
+    margin: auto;
     padding: 0em 0em;
+    width: 50%;
 }
 
 .post-copyright {
@@ -1281,6 +1282,6 @@ ul {
 }
 
 .post-copyright-license {
-    margin: 0.5em 0 0;
+    margin: 0em 0 0;
 }
   
