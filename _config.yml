@@ -51,9 +51,9 @@ menu:
   - page: 关于
     directory: about/
     icon: icon-about
-#  - page: 订阅
-#    directory: feed.xml
-#    icon: icon-rss
+  - page: 订阅
+    directory: feed.xml
+    icon: icon-rss
 
 # Link settings
 links: # 友情链接
