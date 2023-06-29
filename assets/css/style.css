@@ -1269,19 +1269,23 @@ ul {
     margin: auto;
     padding: 0em 0em;
     width: 50%;
+    text-align: center;
 }
 
 .post-copyright {
     font-size: 14px;
     line-height: 1.77;
-    margin: 2em 0 0;
-    padding: 0.5em 1em;
+    /* margin: 0em 0 0; */
+    margin: 0 auto;
+    padding: 0em 1em;
     border-left: 3px solid #44683f;
     background-color: #f9f9f9;
     list-style: none;
+    display: inline-block;
 }
 
 .post-copyright-license {
     margin: 0em 0 0;
+    float: left;
 }
   
